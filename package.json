@@ -1,0 +1,26 @@
+{
+  "name": "project.electron.test",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^21.0.0"
+  },
+  "devDependencies": {
+    "electron-packager": "^16.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/irishstorm/Ark-Character-Tracker.git"
+  },
+  "bugs": {
+    "url": "https://github.com/irishstorm/Ark-Character-Tracker/issues"
+  },
+  "homepage": "https://github.com/irishstorm/Ark-Character-Tracker#readme",
+  "description": ""
+}

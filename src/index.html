@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ark Character Tracker</title>
+    <link rel="stylesheet" href="../src/style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {},
+          },
+        },
+      };
+    </script>
+  </head>
+
+  <body>
+    <div class="w-[460px] mx-auto">
+      <form class="bg-slate-100 mt-5 p-5 rounded mb-5">
+        <div class="text-center mb-5">
+          <label class="font-bold uppercase text-2xl"
+            >Ark Character Tracker</label
+          >
+        </div>
+
+        <div class="flex flex-row">
+          <input
+            id="charCharacterName"
+            type="text"
+            class="border p-2 rounded"
+            placeholder="Character Name"
+            required
+            autocomplete="none"
+          />
+
+          <input
+            id="charServerNo"
+            type="number"
+            class="border mx-5 p-2 rounded"
+            placeholder="Server Number"
+            required
+          />
+        </div>
+
+        <button id="charButton" class="rounded bg-slate-200 w-full mt-5 p-2">
+          Submit
+        </button>
+      </form>
+
+      <table id="table" class="w-[460px] mx-auto p-5">
+        <thead>
+          <tr>
+            <th class="border p-2 text-white">X</th>
+            <th class="border p-2">Character</th>
+            <th class="border p-2">Server</th>
+          </tr>
+        </thead>
+
+        <tbody></tbody>
+      </table>
+
+      <div id="console"></div>
+    </div>
+
+    <script src="../src/functions.js"></script>
+  </body>
+</html>
